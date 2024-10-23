@@ -1,9 +1,6 @@
 # 使用官方的 Node.js 镜像作为基础镜像
 FROM node:18.20.4-alpine AS unpkg
 
-# 设置NPM环境变量
-ENV NPM_REGISTRY_URL=https://registry.npmmirror.com
-
 # 创建和设置工作目录
 WORKDIR /usr/src/app
 
